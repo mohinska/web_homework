@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LeafyPod</title>
     <link rel="icon" type="image/svg+xml" href="assets/img/icons/favicon.svg" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -93,47 +94,41 @@
         </div>
     </section>
 
-    <div class="right-image">
-        <img
-            src="assets/img/hand-leaf-right.png"
-            alt="Leafs Image"
-            class="right-leaves-image"
-        />
-    </div>
-
     <section id="problem" class="problem-section">
-        <div class="problem-content">
-            <h2>
-                Рослини в’януть? Немає часу на догляд? <br />
-                Ми вирішимо це!
-            </h2>
+        <h2>
+            Рослини в’януть? Немає часу на догляд? <br />
+            Ми вирішимо це!
+        </h2>
+        <div class="problem-content-container">
+            <div class="problem-content">
 
-            <h3>Як це працює</h3>
+                <h3>Як це працює</h3>
 
-            <ol class="solution-list">
-                <li class="solution-item">
-                    <p>Заповніть резервуар водою</p>
-                </li>
+                <ol class="solution-list">
+                    <li class="solution-item">
+                        <p>Заповніть резервуар водою</p>
+                    </li>
 
-                <li class="solution-item">
-                    <p>Виберіть режим автополиву</p>
-                </li>
+                    <li class="solution-item">
+                        <p>Виберіть режим автополиву</p>
+                    </li>
 
-                <li class="solution-item">
-                    <p>Насолоджуйтесь здоровими рослинами!</p>
-                </li>
-            </ol>
+                    <li class="solution-item">
+                        <p>Насолоджуйтесь здоровими рослинами!</p>
+                    </li>
+                </ol>
+            </div>
+            <div class="problem-video">
+                <video autoplay muted loop>
+                    <source
+                        src="assets/video/hero-leafypod.mp4"
+                        type="video/mp4"
+                    />
+                    Ваш браузер не підтримує відтворення відео.
+                </video>
+            </div>
         </div>
 
-        <div class="problem-video">
-            <video autoplay muted loop>
-                <source
-                    src="assets/video/hero-leafypod.mp4"
-                    type="video/mp4"
-                />
-                Ваш браузер не підтримує відтворення відео.
-            </video>
-        </div>
     </section>
 
     <section id="features" class="features-section">
@@ -281,13 +276,6 @@
         </div>
     </section>
 
-    <div class="left-image">
-        <img
-            src="assets/img/hand-leaf-left.png"
-            alt="Leaves Pod"
-            class="left-leaves-image"
-        />
-    </div>
 
     <section id="testimonials" class="testimonials-section">
         <h2>Відгуки</h2>
@@ -328,14 +316,6 @@
             </article>
         </div>
     </section>
-
-    <div class="footer-image">
-        <img
-            src="assets/img/pod-footer.png"
-            alt="LeafyPod Product"
-            class="footer-product-image"
-        />
-    </div>
 </main>
 
 <footer id="contact">
@@ -348,7 +328,7 @@
         </p>
 
         <div class="footer-social">
-            <h4>Слідкуйте за нами</h4>
+            <p>Слідкуйте за нами</p>
             <div class="social-icons">
                 <a href="#" class="social-icon">
                     <img
@@ -373,13 +353,15 @@
     </div>
 
     <div class="footer-section footer-right">
-        <ul class="footer-links">
-            <li><a href="#">Умови використання</a></li>
-            <li><a href="#">Політика конфіденційності</a></li>
-        </ul>
+        <div class="footer-right-main">
+            <ul class="footer-links">
+                <li><a href="#">Умови використання</a></li>
+                <li><a href="#">Політика конфіденційності</a></li>
+            </ul>
 
-        <div class="footer-email">
-            <a href="mailto:info@leafypod.one">info@leafypod.one</a>
+            <div class="footer-email">
+                <a href="mailto:info@leafypod.one">info@leafypod.one</a>
+            </div>
         </div>
 
         <div class="footer-copyright">
