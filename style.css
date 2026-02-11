@@ -39,25 +39,25 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 500;
     color: var(--color-black);
 }
 
 h3 {
-    font-size: 2rem;
-    font-weight: 500;
-    color: var(--color-black);
-}
-
-h4, figcaption {
     font-size: 1.5rem;
     font-weight: 500;
     color: var(--color-black);
 }
 
+h4, figcaption {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--color-black);
+}
+
 p {
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 400;
     color: var(--color-black);
     line-height: 1.5rem;
@@ -81,20 +81,20 @@ header {
     gap: var(--gap-large);
     align-items: center;
     padding: 1.5rem 4rem;
-    position: sticky;
+    /* position: sticky; */
 
-    top: var(--gap-small);
+    /* top: var(--gap-small);
     z-index: 1000;
     background: rgba(243, 242, 238, 0.8);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: var(--box-shadow);
-    margin: var(--gap-small);
+    margin: var(--gap-small); */
     border-radius: var(--card-radius);
 }
 
 .logo img {
-    height: 3rem;
+    height: 1.75rem;
     display: block;
 }
 
@@ -402,7 +402,7 @@ footer::before {
     counter-increment: app-counter;
     position: relative;
     padding-left: 4rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 .app-feature::before {
