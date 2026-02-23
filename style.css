@@ -109,6 +109,12 @@ nav ul {
     list-style: none;
 }
 
+nav li:not(:last-child)::after {
+    margin-left: var(--gap-small);
+    content: '|';
+    color: var(--color-dark-green);
+}
+
 nav a {
     color: var(--color-dark-green);
     text-decoration: none;
@@ -207,7 +213,7 @@ nav a:hover {
 }
 
 .hero-image img {
-    max-width: 100%;
+    max-width: 120%;
     height: auto;
     object-fit: contain;
 }
@@ -357,14 +363,14 @@ footer::before {
 }
 
 .problem-video {
-    border-radius: var(--card-radius);
-    box-shadow: var(--box-shadow);
     max-width: 900px;
     margin: 0 auto;
     width: 100%;
 }
 
-.problem-video video {
+video {
+    border-radius: var(--card-radius);
+    box-shadow: var(--box-shadow);
     width: 100%;
     height: auto;
     display: block;
@@ -470,17 +476,6 @@ footer::before {
     font-weight: 500;
 }
 
-.app-video {
-    border-radius: var(--card-radius);
-    box-shadow: var(--box-shadow);
-}
-
-.app-video video {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
 /* ============================================
    KIT SECTION
    ============================================ */
@@ -583,6 +578,7 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     gap: var(--gap-medium);
+    max-width: 30%;
 }
 
 .footer-description {
@@ -678,6 +674,7 @@ footer {
     .hero-image {
         justify-content: center;
         margin-top: 0;
+        z-index: -100;
     }
 
     .hero-image img {
